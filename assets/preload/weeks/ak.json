@@ -1,0 +1,48 @@
+{
+	"storyName": "Fuck you Monika",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"songs": [
+		[
+			"ominous wind",
+			"ak",
+			[
+				255,
+				35,
+				0
+			]
+		],
+		[
+			"reanimated",
+			"ak",
+			[
+				255,
+				53,
+				0
+			]
+		],
+		[
+			"deathwish",
+			"ak",
+			[
+				255,
+				13,
+				75
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Custom Week"
+}
