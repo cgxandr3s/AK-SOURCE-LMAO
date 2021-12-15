@@ -30,6 +30,8 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
+
+	
 	
 	var optionShit:Array<String> = ['story_mode', 'freeplay', #if ACHIEVEMENTS_ALLOWED 'awards', #end 'credits', #if !switch 'donate', #end 'options'];
 
@@ -43,6 +45,10 @@ class MainMenuState extends MusicBeatState
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
 		#end
+		var removedafterwards:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('AK_FULL')); // load.
+		removedafterwards.antialiasing = ClientPrefs.globalAntialiasing;
+		add(removedafterwards);	
+		removedafterwards.alpha = 0.0001;
 
 		camGame = new FlxCamera();
 		camAchievement = new FlxCamera();
